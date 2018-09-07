@@ -1,6 +1,6 @@
 const pics = [
     "iastate.jpg",
-    "brothers.jpg",
+    "brothers.JPG",
     "friends.jpg",
 ];
 
