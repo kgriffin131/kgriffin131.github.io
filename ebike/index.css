@@ -121,6 +121,199 @@ body {
     transition: opacity 0.2s;
 }
 
+
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #111;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #111;
+}
+
+a:focus {
+    text-decoration: none;
+    color: #111;
+}
+a:hover, a:active {
+    text-decoration: none;
+    color: #111;
+}
+
+body {
+    background-color: #f8f8f8;
+    text-align: center;
+    font-family: helvetica;
+    color: #111;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "Home";
+}
+
+#header {
+    grid-area: header;
+
+    display: grid;
+    margin-top: 3%;
+}
+
+#name {
+    grid-area: name;
+
+    font-family: ShadowsIntoLight;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+}
+
+#phrase {
+    grid-area: phrase;
+
+    font-family: GloriaHallelujah;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#options {
+    font-family: PermanentMarker;
+}
+
+#options > a {
+    margin-right: 20px;
+
+    -webkit-transition: opacity 0.1s;
+    -moz-transition: opacity 0.1s;
+    -ms-transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    transition: opacity 0.1s;
+}
+
+#optionResume {
+    opacity: 0.5;
+}
+
+#optionAbout {
+    opacity: 0.5;
+}
+
+
+#options > a:hover {
+    opacity: 1.0;
+}
+
+#Home {
+    grid-area: Home;
+
+    display: grid;
+    grid-gap: 15px;
+    margin-bottom: 5%;
+}
+
+.project {
+    border-radius: 5px;
+    font-size: 150%;
+
+    position: relative;
+    text-align: center;
+}
+
+.project > a > img {
+    opacity: 1;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.project > a > .title {
+    opacity: 0;
+    
+    font-family: Roboto;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(75, 75, 75);
+}
+
+.project:hover > a > img {
+    opacity: 0.4;
+}
+
+.project:hover > a > .title {
+    opacity: 1;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+    #header {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "name"
+            "phrase"
+            "options";
+    }
+
+    #name {
+        font-size: 25px;
+    }
+
+    #phrase {
+        font-size: 14px;
+    }
+
+    #options {
+        margin-bottom: 2%;
+    }
+
+    #Home {
+        grid-template-columns: minmax(100px, 1fr);
+        grid-auto-rows: 250px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
+/* desktop */
+@media (min-width: 900px) {
+    #header {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "options name ..."
+            "phrase phrase phrase";
+    }
+
+    #name {
+        font-size: 30px;
+    }
+
+    #Home {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-auto-rows: 500px;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+}
+
 .project > a > .title {
     opacity: 0;
     
