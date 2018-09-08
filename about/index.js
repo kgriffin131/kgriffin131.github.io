@@ -1,7 +1,15 @@
 const pics = [
-    "iastate.jpg",
-    "brothers.JPG",
-    "friends.jpg",
+	"house.JPG",
+	"sun.JPG",
+	"lilypad.JPG",
+	"redplant.JPG",
+	"tower.JPG",
+	"trees.JPG",
+	"water.JPG",
+	"water.JPG",
+	"rock.JPG"
+
+
 ];
 
 const profilePictureShowOrder = getProfilePictureShowOrder();

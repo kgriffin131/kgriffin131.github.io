@@ -1,0 +1,180 @@
+@font-face {
+    font-family: ShadowsIntoLight;
+    src: url(../res/fonts/ShadowsIntoLight.ttf);
+}
+
+@font-face {
+    font-family: PermanentMarker;
+    src: url(../res/fonts/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+    font-family: Cardo;
+    src: url(../res/fonts/Cardo-Regular.ttf);
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #111;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #111;
+}
+
+a:focus {
+    text-decoration: none;
+    color: #111;
+}
+a:hover, a:active {
+    text-decoration: none;
+    color: #111;
+}
+
+body {
+    background-color: #f8f8f8;
+    text-align: center;
+    font-family: helvetica;
+    color: #111;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "about";
+}
+
+#header {
+    grid-area: header;
+
+    display: grid;
+    margin-top: 3%;
+}
+
+#name {
+    grid-area: name;
+
+    font-family: ShadowsIntoLight;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+}
+
+#options {
+    font-family: PermanentMarker;
+}
+
+#options > a {
+    margin-right: 20px;
+
+    -webkit-transition: opacity 0.1s;
+    -moz-transition: opacity 0.1s;
+    -ms-transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    transition: opacity 0.1s;
+}
+
+#optionPortfolio {
+    opacity: 0.5;
+}
+
+#optionResume {
+    opacity: 0.5;
+}
+
+#optionNow {
+    opacity: 0.5;
+}
+
+#options > a:hover {
+    opacity: 1.0;
+}
+
+#social {
+    grid-area: social;
+
+    color: #111;
+    margin-top: 3%;
+}
+
+#social i {
+    letter-spacing: .3em;
+}
+
+#title {
+    font-family: Cardo;
+    font-size: 50px;
+
+    padding: 0px;
+    margin: 0px;
+    margin-top: 3%;
+    margin-bottom: 0px;
+}
+
+#about {
+    grid-area: about;
+
+    margin-top: 5%;
+}
+
+#profilePicture {
+    box-shadow: 0px 0px 25px grey;
+}
+
+#profilePictureFader {
+    position: absolute;
+    opacity: 0;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+    #header {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "name"
+            "options"
+            "social";
+    }
+
+    #name {
+        font-size: 25px;
+    }
+
+    #options {
+        margin-bottom: 2%;
+    }
+
+    .profilePicture {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/* desktop */
+@media (min-width: 900px) {
+    #header {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "options name ..."
+            "social social social";
+    }
+
+    #name {
+        font-size: 30px;
+    }
+
+    .profilePicture {
+        width: 450px;
+        height: 450px;
+    }
+}
