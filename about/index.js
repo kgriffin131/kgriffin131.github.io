@@ -1,15 +1,7 @@
 const pics = [
-	"house.JPG",
-	"sun.JPG",
-	"lilypad.JPG",
-	"redplant.JPG",
-	"tower.JPG",
-	"trees.JPG",
-	"water.JPG",
-	"water.JPG",
-	"rock.JPG"
-
-
+	"iastate.jpg",
+	"brothers.JPG",
+	"friends.jpg",
 ];
 
 const profilePictureShowOrder = getProfilePictureShowOrder();
