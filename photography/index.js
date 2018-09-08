@@ -6,8 +6,8 @@ const pics = [
 	"tower.JPG",
 	"trees.JPG",
 	"water.JPG",
-	"water.JPG",
-	"rock.JPG"
+	"rock.JPG",
+	"grass.JPG",
 
 
 ];
