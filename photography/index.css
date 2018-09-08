@@ -132,8 +132,8 @@ body {
     opacity: 0;
 }
 
-.circle {
-    border-radius: 50%;
+.square {
+    border-radius: 100%;
 }
 
 /* mobile */
