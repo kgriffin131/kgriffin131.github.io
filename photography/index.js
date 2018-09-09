@@ -4,7 +4,7 @@ const pics = [
 	"lilypad.JPG",
 	"redplant.JPG",
 	"tower.JPG",
-	"trees.JPG",
+	"trees.jpg",
 	"water.JPG",
 	"rock.JPG",
 	"grass.JPG",
