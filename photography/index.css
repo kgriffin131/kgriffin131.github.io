@@ -132,9 +132,7 @@ body {
     opacity: 0;
 }
 
-.square {
-    	width: 982px;
-        height: 655px;
+
 }
 
 /* mobile */
@@ -156,8 +154,8 @@ body {
     }
 
     .profilePicture {
-        width: 982px;
-        height: 655px;
+        width: 1228px;
+        height: 819px;
     }
 }
 
