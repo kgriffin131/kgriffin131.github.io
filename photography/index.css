@@ -132,9 +132,6 @@ body {
     opacity: 0;
 }
 
-.square {
-    border-radius: 100%;
-}
 
 /* mobile */
 @media (max-width: 900px) {
@@ -155,8 +152,8 @@ body {
     }
 
     .profilePicture {
-        width: 280px;
-        height: 280px;
+        width: 982px;
+        height: 655px;
     }
 }
 
