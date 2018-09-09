@@ -132,6 +132,10 @@ body {
     opacity: 0;
 }
 
+.square {
+    	width: 982px;
+        height: 655px;
+}
 
 /* mobile */
 @media (max-width: 900px) {
