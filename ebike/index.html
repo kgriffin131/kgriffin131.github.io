@@ -34,9 +34,20 @@ a:active {
 	<div id="social">
 				<p id="title"><b>E-Bike</b></p>
 			</div>
-				<p id="title">The objective of the project is to convert a stock mountain bike into an electric bike. I will be achieving this goal by replacing the back wheel with an electric wheel. For power, I will be manufacturing my own battery pack from 20-24 18650 batteries. By wiring them in series and parallel, I can achieve the desired voltage and capacitance for my needs. I am using the design process to professionalize this project. This is a work in progress</p>
+				<p id="title">The Uni E-Bike (University E-Bike) is a project inspired by laziness. During freshman year of college, I would bike to every class. I liked doing this because I could leave 10 minutes before class and get there with time to spare. One problem with biking, however, is that it requires energy and hot days create a sweaty situation. Particularly, there is one hill on campus that would kill my momentum every single morning. I had heard of electric bikes, but one quick Google search had my wallet begging me to find an alternative. So, as any sane person would do, I decided to build my own!</p>
 			</div>
-				<img src="/res/image/Bike.jpg" alt="Bike" style="width:512px;height384px;"><img src="/res/image/wheel.JPG" alt="Wheel" style="width:512px;height384px;"> <img src="/res/image/bms.JPG" alt="BMS" style="width:512px;height384px;"><img src="/res/image/battery.JPG" alt="Battery" style="width:512px;height384px;">
+				<p id="title">The first step was to find a motor. The two main options were to have an independent motor with a chain connected to the wheel, or have the motor built in to the wheel itself. I chose a hub motor design so I could still pedal with the motor running/not running, and to keep the bike as discrete as possible. The hub chosen can be seen below.</p>
+			</div>
+				<img src="/res/image/wheel.JPG" alt="Wheel" style="width:512px;height384px;">
+			</div>
+				<p id="title">Next, I had to figure out how to power the motor. After researching different batteries on the market, I chose to create my own battery pack. Yes, from scratch. This reasoning came from the simple fact that no battery on the market today could accomplish all of my design constraints. I wanted a battery that I could house in my backpack while riding. A design like this would allow me to charge the battery in class if the power got to low, and prevent any theft for the bike. The battery is the most expensive part of the build, so theft prevention was at the top of the priority list. These constraints called for a small, lightweight battery, and I could not find any battery cheap enough.</p>
+			</div>
+				<p id="title">To create a battery, I needed three main components: battery cells, a battery management system (BMS), and a way to connect everything together. For battery cells, I chose to use 18650 cells. These are the same type of battery cell used in Tesla battery packs, so I figured they’re a pretty safe bet. Each battery cell is rated for 3.6V and 3000 mAh. I purchased a 36V motor, so I needed 30 cells to reach the required voltage and run-time. The cells are wired in a 10s3p configuration (10 in series, 3 in parallel). This means there are 10 groups of three cells. </p>
+			</div>
+				<p id="title">Next, I needed a battery management system (BMS). A battery management system allows and regulates charging. It stands as a safety measure so no battery gets overcharged, and makes sure charging stays equal over the entire battery pack. The cells and the BMS are connected via nickel strips and solder. Whilst doable, this method is not the most effective, nor the safest way of wiring. The battery pack (outside its housing) can be seen below.</p>
+			</div>
+				<img src="/res/image/battery_1.jpg" alt="battery_1" style="width:512px;height384px;">
+				
 				
 				
 				
