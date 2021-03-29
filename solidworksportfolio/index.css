@@ -97,21 +97,27 @@ main {
     display: grid;
     grid-gap: 15px;
     margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 10%; 
+}
+
+main > * {
+	margin-bottom: 2.5%;
 }
 
 .renders > img{
 	float: left;
-    }
-    .renders > video{
+}
+.renders > video{
 	float: right;
-    }
-    .renders > * {
-	width: 40%;
-    }
+}
+.renders > * {
+	width: 45%;
+}
 
 .onlyvideo > video{
-	width: 40%;
-    }
+	width: 45%;
+}
 
 /* mobile */
 @media (max-width: 900px) {
