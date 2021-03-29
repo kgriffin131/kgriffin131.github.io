@@ -91,7 +91,7 @@ body {
     opacity: 1.0;
 }
 
-#main {
+main {
     grid-area: main;
 
     display: grid;
