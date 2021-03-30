@@ -132,9 +132,6 @@ body {
     opacity: 0;
 }
 
-
-}
-
 /* mobile */
 @media (max-width: 900px) {
     #header {
