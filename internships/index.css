@@ -1,13 +1,10 @@
-
-
-
 a {
     text-decoration: none;
     color: #111;
 }
 a:link {
     text-decoration: none;
-    color: blue;
+    color: #111;
 }
 a:visited {
     text-decoration: none;
