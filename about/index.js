@@ -1,7 +1,9 @@
 const pics = [
-	"iastate.jpg",
-	"brothers.JPG",
-	"friends.jpg",
+	"kevport1.jpg",
+	"kevport2.jpg",
+	"kevport3.jpg",
+	"kevport4.jpg",
+	"kevport5.jpg"
 ];
 
 const profilePictureShowOrder = getProfilePictureShowOrder();
