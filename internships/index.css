@@ -5,7 +5,10 @@ a {
     text-decoration: none;
     color: #111;
 }
-
+a:link {
+    text-decoration: none;
+    color: blue;
+}
 a:visited {
     text-decoration: none;
     color: #111;
