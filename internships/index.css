@@ -141,6 +141,13 @@ body {
     opacity: 1;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* mobile */
 @media (max-width: 900px) {
     #header {
